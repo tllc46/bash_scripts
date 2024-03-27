@@ -13,6 +13,6 @@ gmt begin $file png
 	gmt xyz2grd grid2dvns.z -Ggrid2dvns.grd -I${bds[4]}+n/${bds[5]}+n -R${bds[0]}/${bds[1]}/${bds[2]}/${bds[3]} -ZRB
 	crange=$(gmt grdinfo grid2dvns.grd -T0.05+s)
 	gmt makecpt -Cpolar -I $crange -Z
-=	gmt grdimage grid2dvns.grd -JP15c+a+t$meanr+z -BWrSt -Bx0.01 -By5 -By+l"Depth(km)"
+	gmt grdimage grid2dvns.grd -JP15c+a+t$meanr+z -BWrSt -Bx0.01 -By5 -By+l"Depth(km)"
 	gmt colorbar -B0.1 -B+l"dVp (km/s)" -DJBC+w8c/0.4c
 gmt end
