@@ -10,7 +10,6 @@ bds[3]=$(echo ${bds[3]}+$grl | bc)
 
 gmt begin $file png
 	gmt set FORMAT_GEO_MAP D
-
 	gmt xyz2grd grid2dvew.z -Ggrid2dvew.grd -I${bds[4]}+n/${bds[5]}+n -R${bds[0]}/${bds[1]}/${bds[2]}/${bds[3]} -ZLB
 	crange=$(gmt grdinfo grid2dvew.grd -T0.05+s)
 	gmt makecpt -Cpolar -I $crange -Z
