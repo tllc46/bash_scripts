@@ -2,7 +2,7 @@
 
 lat0=-19.9154
 lon0=134.396
-di=10c #diameter of diagram
+di=10c #지름
 event_file=events
 file=event_rose
 
