@@ -11,11 +11,6 @@ gmt begin $file png
 	gmt coast -W
 	gmt inset begin -DjBR+o0.1c/0.1c -F+p0.5p -Jmerc/0.5c -R125/130/34/39
 		gmt coast -N1 -W
-		gmt plot -L -Wblue <<EOF
-${range[1]} ${range[2]}
-${range[1]} ${range[3]}
-${range[0]} ${range[3]}
-${range[0]} ${range[2]}
-EOF
+		echo ${range[0]} ${range[2]} ${range[1]} ${range[3]} | gmt plot -Sr+s -Wblue
 	gmt inset end
 gmt end
