@@ -1,10 +1,11 @@
 #!/bin/bash
+#fmtt/example1/gmtplot/plotns 참고
 
-grl=4780
+grl=4780 #지구 반지름
 bds=($(cat boundns.gmt))
 file=plotns
 
-meanr=$(echo "0.5*(${bds[0]}+${bds[1]})" | bc)
+meanr=$(echo "0.5*(${bds[0]}+${bds[1]})" | bc) #중심 위도
 bds[2]=$(echo ${bds[2]}+$grl | bc)
 bds[3]=$(echo ${bds[3]}+$grl | bc)
 
