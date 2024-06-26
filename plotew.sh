@@ -1,10 +1,11 @@
 #!/bin/bash
+#fmtt/example1/gmtplot/plotew 참고
 
-grl=4780
+grl=4780 #지구 반지름[km]
 bds=($(cat boundew.gmt))
 file=plotew
 
-meanr=$(echo "0.5*(${bds[0]}+${bds[1]})" | bc)
+meanr=$(echo "0.5*(${bds[0]}+${bds[1]})" | bc) #중심 경도
 bds[2]=$(echo ${bds[2]}+$grl | bc)
 bds[3]=$(echo ${bds[3]}+$grl | bc)
 
