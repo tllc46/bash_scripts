@@ -2,7 +2,7 @@
 
 lat0=35.7684 #중심 위도
 lon0=129.229 #중심 경도
-hor=160 #최대 각거리
+hor=160 #최대 각거리[degree]
 di=10c #지름
 event_file=events
 file=event_plot
