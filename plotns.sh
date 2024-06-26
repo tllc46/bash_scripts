@@ -1,7 +1,7 @@
 #!/bin/bash
 #fmtt/example1/gmtplot/plotns 참고
 
-grl=4780 #지구 반지름
+grl=4780 #지구 반지름[km]
 bds=($(cat boundns.gmt))
 file=plotns
 
