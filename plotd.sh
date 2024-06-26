@@ -1,4 +1,5 @@
 #!/bin/bash
+#fmtt/example1/gmtplot/plotd 참고
 
 bds=($(cat bounddp.gmt))
 file=plotd
