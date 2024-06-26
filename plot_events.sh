@@ -1,9 +1,9 @@
 #!/bin/bash
 
-lat0=35.7684 #lat0
-lon0=129.229 #lon0
-hor=160 #horizon
-di=10c #diameter of map
+lat0=35.7684 #중심 위도
+lon0=129.229 #중심 경도
+hor=160 #최대 각거리
+di=10c #지름
 event_file=events
 file=event_plot
 
