@@ -1,4 +1,5 @@
 #!/bin/bash
+#fmtt/example1/gmtplot/gmthist 참고
 
 file=plothist
 
