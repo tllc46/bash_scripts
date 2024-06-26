@@ -2,8 +2,8 @@
 
 lat0=35.7684 #lat0
 lon0=129.229 #lon0
-hor=160      #horizon
-di=10c       #diameter of map
+hor=160 #horizon
+di=10c #diameter of map
 event_file=events
 file=event_plot
 
