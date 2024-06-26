@@ -1,4 +1,5 @@
 #!/bin/bash
+#fmtomo/gmtfiles/plotgc 참고
 
 bds=($(cat boundgc.gmt))
 file=plotgc
