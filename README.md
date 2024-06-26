@@ -1,16 +1,6 @@
-# bash_scripts
-gmthist.sh: modified fmtt/example1/gmtplot/gmthist
+# bash scripts
+plot_events.sh: teleseismic event 분포
 
-plot_events.sh: plotting teleseismic events map
+plot_rose.sh: backazimuth 분포
 
-plot_rose.sh: plotting backazimuth distribution
-
-plot_stations.sh: plotting seismic receivers map
-
-plotd.sh: modified fmtt/example1/gmtplot/plotd
-
-plotew.sh: modified fmtt/example1/gmtplot/plotew
-
-plotgc.sh: modified fmtomo/gmtfiles/plotgc
-
-plotns.sh: modified fmtt/example1/gmtplot/plotns
+plot_stations.sh: 지진계 지도
