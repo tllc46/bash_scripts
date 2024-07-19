@@ -1,0 +1,28 @@
+#S dx1 symbol size fill pen dx2 text
+S - r 0.5c,0.3c lemonchiffon1 black - Qa
+G 0.1c
+S - r 0.5c,0.3c p16+blemonchiffon1+fgray black - Qt
+G 0.1c
+S - r 0.5c,0.3c yellow black - Qd
+G 0.1c
+S - r 0.5c,0.3c p5+bdeepskyblue+fsienna black - Ts
+G 0.1c
+S - r 0.5c,0.3c p29+bpink+fmagenta2 black - Kgr
+G 0.1c
+S - r 0.5c,0.3c p26+bpink+fgreen black - Kdi
+G 0.1c
+S - r 0.5c,0.3c olivedrab2 black - Kt
+G 0.1c
+S - r 0.5c,0.3c p5+bolivedrab2+fgray black - Ksh
+G 0.1c
+S - r 0.5c,0.3c p31+bolivedrab2+fgray black - Kks
+G 0.1c
+S - r 0.5c,0.3c p62+bplum2+fmagenta2 black - Kqp
+G 0.1c
+S - r 0.5c,0.3c red black - Kad
+G 0.1c
+S - r 0.5c,0.3c purple black - Kbd
+G 0.1c
+S - r 0.5c,0.3c plum3 black - Kss
+G 0.1c
+S - r 0.5c,0.3c p62+bplum3+fgreen4 black - Ksy
