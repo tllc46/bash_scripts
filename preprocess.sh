@@ -22,19 +22,22 @@ get_response()
 
 get_events()
 {
-	starttime=2019-11-15,00:00:00.000
-	endtime=2022-10-12,00:00:00.000
-	lat=35.7684
-	lon=129.229
+	starttime=2019-11-15
+	endtime=2022-10-12
+	latitude=35.7684
+	longitude=129.229
 	maxradius=95
 	minradius=25
-	minmag=5
-	maxmag=10
+	minmagnitude=5
+	maxmagnitude=10
 	event_file=events.txt
 
-	#event_file, w/o header
-	#EventID | o | evla | evlo | evdp | Author | Catalog | Contributor,ContributorID | imagtyp,mag,MagAuthor | kevnm
-	FetchEvent -s $starttime -e $endtime --radius $lat:$lon:$maxradius:$minradius --mag $minmag:$maxmag | gawk '!a[$2]++' FS='|' >$event_file #중복 event 제거
+	wget "https://service.iris.edu/fdsnws/event/1/query?start=$starttime&end=$endtime&lat=$latitude&lon=$longitude&maxradius=$maxradius&minradius=$minradius&minmag=$minmagnitude&maxmag=$maxmagnitude&orderby=time-asc&format=text" -O tmpf
+ 	gawk '!a[$2]++' FS='|' tmpf >$event_file #중복 event 제거
+  	rm tmpf
+
+	#event_file, w/ header
+	#EventID|o|evla|evlo|evdp|Author|Catalog|Contributor|ContributorID|imagtyp|mag|MagAuthor|kevnm
 }
 
 get_data()
