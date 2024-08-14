@@ -4,7 +4,7 @@ get_stations()
 	station=AS??,INKA
 	channel=SHZ,BHZ
 	starttime=2020-01-01
- 	station_file=station.txt
+ 	station_file=stations.txt
 	wget "https://service.iris.edu/fdsnws/station/1/query?net=$network&sta=$station&cha=$channel&start=$starttime&level=channel&format=text" -O $station_file
 
 	#station_file, w/ header
