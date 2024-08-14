@@ -80,3 +80,18 @@ get_data()
  	#data_post_file, w/o header
   	#knetwk kstnm khole kcmpnm b e
 }
+
+get_data_KIGAM()
+{
+	#dataselect web service만 post method를 요청할 수 있다, station web service는 query만 가능
+	data_post_file=data_post.txt
+ 	mseed_file=test1.mseed
+
+	cat <<EOF >$data_post_file
+KG TJN * HHZ 2017-01-01T00:00:00 2017-01-01T23:59:59.999999
+KG CHC2 * HHZ 2017-01-01T00:00:00 2017-01-01T23:59:59.999999
+KG MGB * HHZ 2017-01-01T00:00:00 2017-01-01T23:59:59.999999
+KG YOJB * HHZ 2017-01-01T00:00:00 2017-01-01T23:59:59.999999
+EOF
+	wget "https://quake.kigam.re.kr/fdsnws/dataselect/1/query" --header="X-Open-Api-Token: quqBqOT3irylT5m6VnazhoeXw7wgLB" --post-file=$data_post_file -O $mseed_file
+}
